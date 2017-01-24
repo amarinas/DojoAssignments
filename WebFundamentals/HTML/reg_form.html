@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Registration Form</title>
+  </head>
+  <body>
+
+    <form action="action_page.php">
+      <p><h2>My Registration Form</h2></p><br>
+      <label for="first_name">First Name </label>
+      <input type ="text" id="first_name" name="first_name"><br><br>
+
+      <label for="last_name">Last Name </label>
+      <input type="text" id="last_name" name="last_name"><br><br>
+
+      <label for="email">Email </label>
+      <input type="text" id="email" name="email"><br><br>
+
+      <label for="password">Password </label>
+      <input type="password" id="password" name="password"><br><br>
+
+      <label for="pw_confirm">PW Confirm </label>
+      <input type="password" for="pw_confirm" name="PW Confirm"><br><br>
+
+      <label for="bday">Birthday </label>
+      <input type="date" name="bday"><br><br>
+
+      <input type="radio" id="male" name="gender" value="male ">
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female ">
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="other ">
+      <label for="other">Other</label><br><br>
+
+      <p>A short descriptrion about yourself:<br>
+        <textarea name="description"></textarea><br></p>
+
+      <p>Favorite Langauge
+        <select name="Favorite Language">
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="html">Html</option>
+            <option value="CSS">CSS</option>
+        </select></p>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
