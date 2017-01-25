@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>javascript Practice</title>
+      <link rel="stylesheet" type="text/css" href="java_style.css">
+   </head>
+   <body>
+       <div id="wrapper">
+         <div id="header">
+            <div class="text1"><p>JavaScript Basics</p></div>
+         </div>
+
+         <div id="side">
+          <p><u>Home</u></p>
+
+              <ul class="block">
+                <li><u>Javascript Overview</u></li>
+                <li>
+                  <ul class="block1">
+                      <li>boo</li>
+                      <li><u>one</u></li>
+                      <li><u>twoe</u></li>
+                      <li><u>twoe</u></li>
+                      <li><u>woe</u></li>
+                      <li><u>twoe</u></li>
+                  </ul>
+                </li>
+                <li><u>Javascript Overview</u></li>
+                <li><u>Javascript</u></li>
+                <li><u>quiz</u></li>
+              </ul>
+
+         </div>
+         <div id="main_content">
+            <div class="text2"><p>JavaScript Basic</p></div>
+            <div class="desc_Script"><p>JavaScript is a programming language that adds interactivity to
+              your website (for example: games, responses when buttons are pressed
+              or data entered in forms, dynamic styling, animation). This article
+              helps you get started with this exciting language and gives you an idea
+              of what is possible.</p></div>
+                <div class="text4">
+                    <ul>
+                      <li><p><u>Variable Decleration</u> blah blaha blahalbhahlbhlahbl</p></li>
+                      <li><p><u>Variable assignments</u> blah blaha <span>blahor data entered in forms,albhahlbhlahbl</span></p></li>
+                      <li><p><u>Datatypes</u> blah blaha <span>blahalb</span> hahlbh <span>lahbl</span> so much fun with data types</p></li>
+                      <li><p><u>Datatypes</u> blahor data entered in forms, bor data entered in forms,laha <span>blahalb</span> hahlbh <span>lahbl</span> so much fun with data <span>types</span></p></li>
+                      <li><p><u>Functions</u> blahor data entered in forms, bor data entered in forms,laha <span>blahalb</span> hahlbh <span>lahbl</span> so much fun with data <span>types</span></p></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="botbar">
+              <div id="text3">for more information click <u>Javascript</u>
+            </div>
+          </div>
+      </div>
+   </body>
+</html>
