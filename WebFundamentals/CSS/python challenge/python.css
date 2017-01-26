@@ -1,0 +1,207 @@
+*{
+ margin: 0px;
+ padding: 0px;
+}
+#wrapper{
+ width: 950px;
+ height: 850px;
+ background-color: darkslateblue;
+
+}
+.pic_py{
+  display:inline-block;
+  margin-left: 10px;
+
+}
+
+.li_top li{
+  list-style-type: none;
+  display: inline;
+  margin-left: 20px;
+
+}
+
+.search_box{
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  margin-left: 700px;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: -100px;
+  border-radius: 10px
+
+
+
+}
+
+.sbox{
+  border-color: gray;
+  border-style:outset;
+  border-width: 1px 0 1px 1px;
+  font-size: 10px;
+  line-height: 0.9em;
+  height: 24px;
+  width: 80px;
+  padding: 1px 2px 1px 40px;
+
+
+}
+.button{
+  background-color: blue;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+
+
+}
+.no_la{
+  font-size: 12px;
+  margin-left: 740px;
+  padding-top: 20px;
+}
+
+#navigation{
+ height: 30px;
+ width: 850px;
+ background-color: #3366CC;
+ border-radius: 10px;
+ margin-left: 55px;
+ margin-top: 40px;
+ color: white;
+ font-size: 20px;
+ padding: 10px;
+ list-style-type: none;
+ word-spacing: 40px;
+
+ }
+
+
+#order_list{
+  position: absolute;
+  line-height: 2.0;
+ height: 300px;
+ width: 200px;
+ padding: 20px;
+ margin-top: 8px;
+ margin-left:50px;
+ text-align: center;
+ list-style-position: inside;
+ text-decoration: underline;
+ text-indent: 10px
+
+
+
+}
+
+#parag{
+width: 604px;
+height: 90px;
+text-align: center;
+margin-top: 25px;
+margin-left: 300px;
+
+}
+
+#order_list2{
+
+ font-size: 20px;
+ height: 200px;
+ width: 300px;
+ padding: 20px;
+ margin-left:450px;
+ text-align: center;
+ color: yellow;
+ text-indent: 10px
+
+}
+.ul_li{
+    list-style-type: none;
+    line-height:1.8;
+}
+.info_one{
+  border-top: 5px;
+  border-top-style: solid;
+  border-color: darkslateblue;
+  width: 270px;
+  height: 50px;
+  font-size: 14px;
+  display:inline-block;
+  margin-left: 150px;
+  padding-right: 100px;
+
+
+}
+.info_two{
+  border-top: 5px;
+  border-top-style: solid;
+  border-color: darkslateblue;
+  width: 270px;
+  height: 50px;
+  font-size: 14px;
+  display:inline-block;
+  margin-left: 10px;
+  padding-right: 100px;
+  vertical-align: top;
+
+
+}
+
+.info_one div{
+  display: block;
+  font: 12px;
+  margin-left: 50px;
+  font-weight: bold;
+color: blue;
+
+}
+
+.info_two div{
+  display: block;
+  font: 12px;
+  margin-left: 50px;
+  font-weight: bold;
+  color: blue;
+}
+#main_content{
+ height: 210px;
+ width: 100%;
+ display: block;
+ padding: 10px;
+ background-color: white;
+
+}
+.list_one li{
+  text-align: center;
+  font-size: 13px;
+
+}
+
+.main_footer{
+
+  height:70px;
+  width: 930px;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+
+}
+
+.main_footer p{
+  font-size: 10px;
+  margin-top: 15px;
+}
+.title_one{
+  font-weight: bold;
+  color: black;
+}
+.par_1{
+
+}
+span{
+  color:green;
+}
