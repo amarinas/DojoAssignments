@@ -1,0 +1,28 @@
+.container{
+  background-color: #DDDFD4;
+  height: 980px;
+  width: 980px;
+
+}
+.header{
+  background-color: #3FB0AC;
+  width: 900px;
+  height: 50px;
+
+}
+
+
+
+.header h2{
+  margin-left: 50px;
+
+}
+
+.header img{
+
+  background-color: #ccccc;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  color: #3FB0AC;
+}
