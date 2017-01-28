@@ -1,28 +1,150 @@
-.container{
+
+
+*{
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  font-size:100%;
+  vertical-align:baseline;
+  }
+
+  .container{
   background-color: #DDDFD4;
-  height: 980px;
-  width: 980px;
+  height: 100%;
+  width: 880px;
+  padding: 10px;
 
 }
 .header{
   background-color: #3FB0AC;
-  width: 900px;
-  height: 50px;
+  width: 840px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin-left: 20px;
+  display: block;
+
+
 
 }
 
-
-
 .header h2{
   margin-left: 50px;
+  margin-top: -30px;
+
+
 
 }
 
 .header img{
-
-  background-color: #ccccc;
   display: inline-block;
-  height: 50px;
-  width: 50px;
-  color: #3FB0AC;
+  height: 40px;
+  width: 40px;
+  mix-blend-mode: multiply;
+
+
+}
+
+.header ul{
+  margin-left: 300px;
+  margin-top: -20px;
+  padding-right: 20px;
+  font-size: 14px;
+
+
+}
+.header li{
+  padding-right: 20px;
+  list-style-type: none;
+  display: inline-block;
+
+}
+
+.main {
+  width: 840px;
+  height: 500px;
+  background-color: #FAE596;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.wgit{
+ width: 220px;
+ height: 480px;
+ background-color: #173F43;
+ display: inline-block;
+
+}
+
+.wgit h3 {
+font-weight: bold;
+font-size: 20px;
+margin-left: 10px;
+margin-top: 10px;
+
+}
+
+.wgit p{
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 180
+}
+
+.ginit, .gadd, .gstatus  {
+  background-color: #173F43;
+  display: inline-block;
+  width: 155px;
+  height: 155px;
+  vertical-align: top;
+  margin-left: 30px;
+
+}
+
+.gcommit, .gremote{
+  background-color: #173F43;
+  display: inline-block;
+  padding-left: -400px;
+  margin-left: 250px;
+  margin-top: -300px;
+  vertical-align: top;
+  width: 250px;
+  margin-right: -215px;
+  height: 135px;
+
+}
+
+.gpush{
+
+width: 540px;
+height: 135px;
+background-color: #173F43;
+margin-left: 250px;
+margin-top: -155px;
+display: inline-block;
+vertical-align: top;
+
+}
+
+.footer {
+  width: 860px;
+  height: 70px;
+  background-color: #3FB0AC;
+  margin-left: 20px;
+  margin-top: -15px;
+
+}
+
+.footer p{
+padding-top: 20px;
+  text-align: center;
+}
+span{
+  color: blue;
 }
