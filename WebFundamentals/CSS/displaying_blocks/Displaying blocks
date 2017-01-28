@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>display blocks</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/github.jpg" class="xtra1" alt="" />
+      <h1>Display our blocks!</h1>
+      <img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/catandninja.png" class="xtra" alt="" />
+
+
+    </div>
+    <div class="main_image">
+      <div class="row1">
+        <ul class="one">
+          <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/dojocat.jpg" alt="" /></li>
+          <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/coder2.jpg" alt="" /></li>
+          <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/cherry.jpg" alt="" /></li>
+          <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/aidorucat.png" alt="" /></li>
+        </ul>
+      </div>
+      <div class="row2">
+        <ul class="two">
+          <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/heisencat.png" alt="" /></li>
+          <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/riddlocat.png" alt="" /></li>
+          <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/oktobercat.png" alt="" /></li>
+          <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/domo-cat.png" alt="" /></li>
+        </ul>
+      </li>
+    </div>
+    <div class="row3">
+      <ul>
+        <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/linkcat.png" alt="" /></li>
+        <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/chellocat.jpg" alt="" /></li>
+        <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/mario.png" alt="" /></li>
+        <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/kantana.jpg" alt="" /></li>
+      </ul>
+    </div>
+    <div class="row4">
+      <ul>
+        <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/ironcat.png" alt="" /></li>
+        <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/stormtroopocat.png" alt="" /></li>
+        <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/cooler.png" alt="" /></li>
+        <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/daftpunk.gif" alt="" /></li>
+      </ul>
+    </div>
+    <div class="row5">
+      <ul>
+        <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/defunktocat.png" alt="" /></li>
+        <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/visionary.jpg" alt="" /></li>
+        <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/jean-luc-picat.jpg" alt="" /></li>
+        <li><img src="/Users/Ali_macbook/Desktop/DojoAssignments/WebFundamentals/CSS/displaying_blocks/images/codercat.jpg" alt="" /></li>
+      </ul>
+    </div>
+
+  </div>
+
+
+</div>
+
+</body>
+</html>
