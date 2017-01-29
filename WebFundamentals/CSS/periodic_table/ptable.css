@@ -1,0 +1,41 @@
+*{
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  font-size:100%;
+  vertical-align:baseline;
+  }
+
+  .Table
+     {
+         display: table;
+     }
+     .Title
+     {
+         display: table-caption;
+         text-align: center;
+         font-weight: bold;
+         font-size: larger;
+     }
+     .Heading
+     {
+         display: table-row;
+         font-weight: bold;
+         text-align: center;
+     }
+     .Row
+     {
+         display: table-row;
+     }
+     .Cell
+     {
+         display: table-cell;
+         border: solid;
+         border-width: thin;
+         padding-left: 5px;
+         padding-right: 5px;
+     }
