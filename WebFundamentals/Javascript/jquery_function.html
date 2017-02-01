@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jquery function</title>
+  <style>
+  .selected{
+    color:red;
+    }
+  .highlight{
+    background: blue;
+  }
+    </style>
+  <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $("p").click(function(){
+      $(this).slideUp();
+    });
+    $('#ui-btn-left').click(function(){
+      $("hide").hide();
+    });
+    $('#ui-btn-right').click(function(){
+      $('#show').show("slow")
+      });
+
+    $('#ui-btn-x').click(function(){
+      $('#mic2').toggle();
+    });
+    $('#slided').click(function(){
+      $('#d1').slideDown("slow");
+    });
+    $("#stog").click(function(){
+      $("#sd1").slideToggle();
+    });
+
+    $('#fadein').click(function(){
+      $('#fi').fadeIn("slow");
+    });
+
+    $('#fadeout').click(function(){
+    $('#fi').fadeOut("slow");
+    });
+    $('#addC').addClass("selected highlight");
+
+    $('#b4').click(function(){
+      $('#b4').before("hello");
+    });
+    $('#af').click(function(){
+      $('#af').after("bye");
+    });
+
+    $('#ap').click(function(){
+      $('#ap').append("bye");
+    });
+
+    $('#html').click(function(){
+      var boo = $('#mic1').html();
+      $('#html1').text(boo);
+    });
+    $('#att').click(function(){
+      var gettitle = $('.hide').attr('title');
+      $('#att').after(gettitle);
+    });
+    $('#val').click(function(){
+      var getval = $('val1').val();
+      $('#val1').after(getval);
+    });
+  });
+
+  </script>
+
+</head>
+<body>
+  <div class="header">
+
+  </div>
+  <p>
+    My jQuery basic assignment!
+  </p>
+  <p class="hide" title="badballer"><button id="ui-btn-left">now u see me</button></button>hide me</p>
+  <button id="ui-btn-right">show it</button><p id="show" style="display: none">suprise !!!</p>
+  <button id="ui-btn-x">toggle me this</button>
+  <p id="mic1">mic 1</p>
+  <p id="mic2" style="display:none">mic 2</p>
+
+  <div id=slided>click to slide me down</div>
+  <p id="d1" style="display:none">slidye...slide</p>
+
+  <button id="stog">slide toggle me </button>
+  <p id="sd1" style="display:none">hello there!!!</p>
+
+  <div id="fadein" > click me to fade me in</div><p id="fi" style="display:none">
+    fading in the favorie icon</p>
+
+  <div id="fadeout">click me to fade out</div>
+  <div id="addC">adding my first class</div>
+
+  <button id="b4">add something before this button </button><p>
+    boor
+  </p>
+  <button id="af">add something after this button </button>
+  <button id="ap">append somthing here </button>
+  <button id="html">Html Html me!! </button><p id="html1">
+    HAHAHAH!!!
+  </p>
+  <button id="att">get my attribute pls </button>
+  <button id="val">whats my value </button>
+  <input id = "val1" type="text" value="here is my value" />
+
+
+</body>
+</html>
