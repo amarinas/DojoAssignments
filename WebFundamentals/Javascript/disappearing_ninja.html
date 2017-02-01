@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dissapear ninja</title>
+    <style>
+
+    #ninja img{
+      border-style: solid;
+      border-width: thick;
+      border-color: green;
+    }
+    </style>
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        $('img').click(function(){
+          $(this).slideUp('slow');
+        });
+
+        $('#button').click(function(){
+          $('img').fadeIn('slow');
+        });
+
+      });
+    </script>
+  </head>
+  <body>
+    <div id="ninja">
+
+
+    <img src="ninja.png" />
+      <img src="ninja.png" />  <img src="ninja.png" />  <img src="ninja.png" />  <img src="ninja.png" />  <img src="ninja.png" />  <img src="ninja.png" />  <img src="ninja.png" />
+</div>
+    <button id="button">restore</button>
+
+  </body>
+</html>
