@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>contact card</title>
+  <style>
+
+  table{
+  margin-right: 10px;
+  border-style: solid;
+}
+
+  }
+
+  form{
+    width: 250px;
+  text-align: right;
+  width: 500px;
+  }
+
+  #contactcard{
+    /*width: 200px;
+    height: 100px;*/
+    display: inline-block;
+    /*background-color: blue;*/
+
+  }
+  .newcard{
+    border-style: solid;
+    border-width: medium;
+  }
+  </style>
+
+  <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+
+
+        $('button').click(function(){
+          var first = $("input[name='first_n']").val();
+          var last = $("input[name='last_n']").val();
+          var textArea = $("textarea").val();
+          $('#contactcard').append("<div class='newcard'><h3>"+first+"</h3><h3>"+last+"<p>Click for more info</p></h3>"+"<div class= hideme>" + textArea +"</div></div>").css("background-color", "green");
+          $(".hideme").hide();
+          return false;
+        });
+
+        $(document).on("click", ".newcard", function(){
+            $(this).children().toggle();
+            $(this).attr(".hideme", first);
+            });
+
+          // $(this).show(textArea);
+
+
+
+
+});
+  </script>
+</head>
+<body>
+<h1>Please enter your new contact card!!!!!</h1>
+
+  <form action="process.php" method="post">
+    <p>First Name: <input  type="text" name="first_n" value="First Name" /></p>
+    <p>Last Name:  <input name="last_n" value="Last Name" /></p>
+    <p>Description:</p><textarea rows="4" cols="50" ></textarea>
+    <button>Add User</button>
+  </form>
+
+  <div id= "contactcard" type='button'>
+  </div>
+
+
+</body>
+</html>
