@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>weather api</title>
+    <style media="screen">
+      input{
+        width: 200px;
+      }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('form').submit(function() {
+            var value = $("input[name='city']").val();
+            console.log(value);
+            // your code here (build up your url)
+
+$.get("http://api.openweathermap.org/data/2.5/weather?q="+value+"&&appid=28ffec5320d2f55fe5f985361ba8b2ab"
+, function(res) {
+
+              var cname=  "<h1>" +res.name+ "</h1>";
+              var temp =  res.main.temp;
+                // your code here
+                console.log(cname);
+                console.log(temp);
+              var newtemp = Math.floor(temp * 9/5 - 459.67);
+              console.log(newtemp);
+              $("#fdeg").html(cname + "<h2>Temperature: "+newtemp+"</h2>");
+            }, 'json');
+            // don't forget to return false so the page doesn't refresh
+            return false;
+        });
+    });
+
+    </script>
+  </head>
+  <body>
+
+    <form>
+      <input type="text" name="city" value="enter city">
+      <button>Search City</button>
+
+    </form>
+    <div id="fdeg"></div>
+  </body>
+</html>
