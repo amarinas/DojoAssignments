@@ -26,13 +26,14 @@
       $.get("http://anapioficeandfire.com/api/houses?words="+$(this).attr('words'), function(res) {
         $('#houses').html("<p>Name: "+res[0].name+"</p>"+"<p>Words: "+res[0].words+"</p>"
         + "<p>Name: "+res[0].name+"</p>" + "<p>Titles: "+res[0].titles+" </p>");
+        console.log(res);
         }, "json");
       });
       });
     </script>
   </head>
   <body>
-    <img words="Fire and Blood" src="gameofthrones/baratheon.png" />
+    <img words="Ours is the Fury" src="gameofthrones/baratheon.png" />
     <img words="Hear Me Roar!" src="gameofthrones/lannister.jpg" />
      <img words="Winter is Coming" src="gameofthrones/stark.jpg" />
      <img words="Fire and Blood" src="gameofthrones/targaryen.jpg" />
