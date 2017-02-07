@@ -16,7 +16,7 @@ def multiply(arr, b):
         newarr.append(i)
     # print newarr
     return newarr
-print multiply([2,4,10,16], 5)
+# print multiply([2,4,10,16], 5)
 
 # Hacker challenge
 def layered_multiples(arr):
