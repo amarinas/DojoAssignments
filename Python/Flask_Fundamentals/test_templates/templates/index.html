@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+     <title>My First Template</title>
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='my_style_sheet.css') }}">
+     <script type="text/javascript" src="{{ url_for('static', filename='my_script.js') }}"></script>
+  </head>
+  <body>
+	<h1>my first flask templet using python</h1>
+	<p>phrase: {{ phrase}}</p>
+	<p>time: {{times}}</p>
+    {%for x in range(0,times): %}
+    <p>
+       {{ phrase}}
+    </p>
+    {% endfor %}
+
+    {% if phrase == "Hello" %}
+    <p>
+       the pharse says hello
+    </p>
+    {% endif %}
+
+
+  </body>
+</html>

@@ -1,0 +1,8 @@
+1. pip install Django - installing django into python
+2. pip list- list packages that are not dependencies of installed packages
+3.pip install Django - when django already installed in the system termial let us know that it is already installed
+4. pip freeze- output installed packages in requirements format
+5. pip freeze > requirements.txt - creates a txt file
+6. pip uninstall Django- unistall Django from python
+7. pip show Django- shows the version of django and where it is located
+8 pip search Flask-- install flask into python
