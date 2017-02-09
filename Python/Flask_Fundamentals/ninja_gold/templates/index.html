@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ninja gold</title>
+</head>
+<body>
+  <p>
+    {{session["gold"]}}
+  </p>
+  <form action="/process_money" method="post">
+    FARM:
+    <input type="hidden" name="building" value="farm" />
+    <input type="submit" value="Find Gold!"/>
+  </form>
+  <form action="/process_money" method="post">
+    CAVE:
+    <input type="hidden" name="building" value="cave" />
+    <input type="submit" value="Find Gold!"/>
+  </form>
+  <form action="/process_money" method="post">
+    HOUSE:
+    <input type="hidden" name="building" value="house" />
+    <input type="submit" value="Find Gold!"/>
+  </form>
+  <form action="/process_money" method="post">
+    CASINO:
+    <input type="hidden" name="building" value="casino" />
+    <input type="submit" value="Find Gold!"/>
+  </form>
+  <textarea rows="10" cols="100">
+    {{session["result"]}}
+  </textarea>
+
+</body>
+</html>
