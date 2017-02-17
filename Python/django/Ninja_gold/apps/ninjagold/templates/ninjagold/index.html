@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ninja gold</title>
+</head>
+<body>
+  <p>
+    {{request.session.gold}}
+  </p>
+  <form action="/process_money" method="post">
+    {% csrf_token %}
+    FARM:
+    <input type="hidden" name="building" value="farm" />
+    <input type="submit" value="Find Gold!"/>
+  </form>
+  <form action="/process_money" method="post">
+    {% csrf_token %}
+    CAVE:
+    <input type="hidden" name="building" value="cave" />
+    <input type="submit" value="Find Gold!"/>
+  </form>
+  <form action="/process_money" method="post">
+    {% csrf_token %}
+    HOUSE:
+    <input type="hidden" name="building" value="house" />
+    <input type="submit" value="Find Gold!"/>
+  </form>
+  <form action="/process_money" method="post">
+    {% csrf_token %}
+    CASINO:
+    <input type="hidden" name="building" value="casino" />
+    <input type="submit" value="Find Gold!"/>
+  </form>
+  <textarea rows="10" cols="100">
+    {{request.session.result}}
+  </textarea>
+
+</body>
+</html>
