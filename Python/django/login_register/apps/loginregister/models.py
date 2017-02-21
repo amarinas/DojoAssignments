@@ -1,0 +1,48 @@
+from __future__ import unicode_literals
+from django.db import models
+import re
+import bcrypt
+EMAIL_REGEX = re.compile(r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)")
+NAME_RE = re.compile(r'[a-zA-Z]{2,}')
+
+class UserManager(models.Manager):
+    #order first_name, last_name, email, pwd, cpwd
+    def register(self, *args):
+        if not NAME_RE.match(args[0]):
+            return {'error' : 'False' }
+        if len(Users.objects.filter(email=args[2])) > 0:
+            return {'error7' : 'False' }
+        elif not NAME_RE.match(args[1]):
+            return {'error1' : 'False' }
+        elif not EMAIL_REGEX.match(args[2]):
+            return {'error2' : 'False' }
+        elif len(args[3]) < 8:
+            return {'error3' : 'False' }
+        elif args[3] != args[4]:
+            return {'error4' : 'False' }
+        else:
+            password = args[3].encode()
+            pwhash= bcrypt.hashpw(password,bcrypt.gensalt())
+            super(UserManager, self).create(first_name=args[0], last_name=args[1], email=args[2], password=pwhash)
+        return {'first_name': args[0], 'last_name': args[1], 'email' : args[2], 'password': args[3]}
+
+    def login(self, email, password):
+        existing = Users.objects.filter(email=email)
+        if len(existing) <= 0:
+            return {'error8': 'False'}
+        elif not existing:
+            return {'error5' : 'False' }
+        elif not bcrypt.checkpw(password.encode(), existing[0].password.encode()):
+            return {'error6' : 'False' }
+        else:
+            return{ 'True': existing[0].id }
+
+
+class Users(models.Model):
+    first_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30)
+    email = models.CharField(max_length=40)
+    password = models.CharField(max_length=255)
+    created_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now=True)
+    objects = UserManager()
