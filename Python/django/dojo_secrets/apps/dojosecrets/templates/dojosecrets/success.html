@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>success page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Success! Welcome {{loguser.first_name}}!</h1>
+        <form action='/logout'  >
+
+          {% csrf_token %}
+        <input type="submit" class="btn" value="logout" />
+       </form>
+       {% if messages %}
+       <ul>
+         {% for message in messages %}
+         <li class="{{ message.tags }}"> <h4>{{ message }}</h4>
+         </li>
+           {% endfor %}
+       </ul>
+       {% endif %}
+       <form class="textarea" action="/makepost" method="post">
+         {% csrf_token %}
+         <input type="text" name="secretmessage" class="">
+           <input type="submit" value="POST" class="btn">
+       </form>
+       <a href="/secretspage" >Most Popular Secrets</a>
+       <h1>Recent Secrets....</h1>
+       {% for secret in post %}
+       <p>{{secret.content}}</p>
+       {% if loguser == secret.creator %}
+       <form class="" action="/delete/{{secret.id}}" method="post">
+         {% csrf_token %}
+         <input type="submit" name="deletepost" value="delete">
+       </form>
+       {% elif loguser in secret.likedby.all %}
+       <p>You liked this</p>
+       {% elif loguser not in secret.likedby.all %}
+       <form class="" action="/like/{{secret.id}}" method="post">
+         {% csrf_token %}
+         <input type="submit" name="likepost" value="Like">
+       </form>
+
+        {% endif %}
+        {{secret.count}}
+         {% endfor %}
+      </div>
+    </div>
+
+  </body>
+</html>
