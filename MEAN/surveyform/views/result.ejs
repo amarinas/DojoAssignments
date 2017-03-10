@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+<h2>Subbmited info</h2>
+<% for (data in user_data) { %>
+<h3>Name: <%= user_data.name %></h3>
+<h3>Location: <%= user_data.location %></h3>
+<h3>Language: <%= user_data.language %></h3>
+<h3>Comment: <%= user_data.Comment %></h3>
+<hr>
+<% } %>
+</body>
+</html>

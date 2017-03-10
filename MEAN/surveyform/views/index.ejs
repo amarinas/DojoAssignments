@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+</head>
+<body>
+<form action='/result' method='post'>
+    Name:<input type='text' name='name'><br />
+    Dojo Location:
+    <select name="location">
+        <option name="location">san jose</option>
+        <option name="location">silicon valley</option>
+    </select><br />
+    Favorite Language:
+    <select name="language">
+        <option name="language" value="python">python</option>
+        <option name="language" value="java">java</option>
+        <option name="language" value="ruby">ruby</option>
+    </select><br />
+    Comments (optional:)<br />
+    <textarea name="textbox" cols="60" rows="5"></textarea><br />
+    <input type='submit' value='submit'>
+</form>
+
+</body>
+</html>
