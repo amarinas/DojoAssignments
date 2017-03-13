@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type ="text/javascript">
+            $(document).ready(function(){
+                alert("loaded jquery");
+                var socket = io.connect();
+
+                $("#survey").submit(function(e) {
+                    e.preventDefault();
+                    socket.emit("posting_form",{
+                        name: $("#name").val(),
+                        location: $("#location").val(),
+                        language: $("#language").val(),
+                        comment: $("#textbox").val(),
+                    })
+                });
+                socket.on('updated_message', function(data){
+                    $('#message').html("you emitted the following" + JSON.stringify(data.res));
+
+                });
+                socket.on('ran_num', function(data){
+                    $('#number').html("your lucky number emitted by the server is " +JSON.stringify(data.res));
+                });
+
+            })
+    </script>
+</head>
+<body>
+<div id="message" ></div>
+<div id= "number" ></div>
+<form action='' method='post' id = "survey">
+    Name:<input type='text' name='name' id="name"><br />
+    Dojo Location:
+    <select name="location" id="location">
+        <option name="location">san jose</option>
+        <option name="location">silicon valley</option>
+    </select><br />
+    Favorite Language:
+    <select name="language" id="language">
+        <option name="language" value="python">python</option>
+        <option name="language" value="java">java</option>
+        <option name="language" value="ruby">ruby</option>
+    </select><br />
+    Comments (optional:)<br />
+    <textarea name="textbox" id="textbox" cols="60" rows="5"></textarea><br />
+    <input type='submit' value='submit'>
+</form>
+
+</body>
+</html>
