@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        basic mongoose app
+    </title>
+</head>
+<body>
+<h1>place me in your database</h1>
+<form action="/users" method="POST">
+    Name:<input type="text" name="name" id="name">
+    Age: <input type="text" name="age" id="age">
+    <input type="submit">
+
+</form>
+
+<h1>Find if User exists</h1>
+<form action="/find" method="Post">
+    Find Name: <input type="text" name="find_name">
+    <input type="submit">
+</form>
+
+</body>
+</html>

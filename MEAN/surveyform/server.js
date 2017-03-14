@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 
 //invoke var express and sotre app in var app
 var app = express();
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded(true));
 app.use(express.static(path.join(__dirname, "./static")));
 console.log(__dirname);
 
